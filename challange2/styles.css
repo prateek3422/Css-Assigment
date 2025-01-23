@@ -1,0 +1,213 @@
+:root {
+  --primary-blue: #3b82f6;
+  --primary-blue-dark: #2563eb;
+  --gray-800: #1f2937;
+  --neutral-400: #9ca3af;
+  --neutral-900: #111827;
+
+  /* Dark mode variables */
+  --bg-dark: #111827;
+  --text-dark: #ffffff;
+  --border-dark: #374151;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.content-col h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.content-col p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.cta-group {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.sr-only {
+}
+
+.input-wrapper {
+}
+
+input[type="text"] {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  background: #e8e5e5;
+  outline: none;
+}
+
+.demo-button {
+  padding: 0.8rem;
+  background-color: var(--primary-blue);
+  color: var(--text-dark);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 10px;
+  border: none;
+}
+
+.demo-button:hover {
+  background-color: var(--primary-blue-dark);
+}
+
+.brands-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  /* gap: 2rem; */
+  margin-top: 3rem;
+}
+
+.trusted-by {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.brand-logos {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-logo {
+  width: 30%;
+}
+
+.image-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 20px;
+}
+
+@media (min-width: 640px) {
+  .hero {
+  }
+
+  .content-col h1 {
+  }
+
+  .cta-group {
+  }
+
+  .demo-button {
+  }
+
+  .input-wrapper {
+  }
+
+  input[type="text"] {
+  }
+}
+
+@media (min-width: 768px) {
+  .content-col h1 {
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+  }
+
+  .hero-grid {
+  }
+
+  .content-col h1 {
+  }
+
+  .cta-group {
+  }
+
+  .brands-section {
+  }
+
+  .image-col {
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-grid {
+    gap: 3rem;
+  }
+}
+
+.dark-mode-toggle {
+  position: absolute;
+  right: 12rem;
+  top: 2rem;
+  background: var(--primary-blue);
+  color: var(--text-dark);
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dark-mode-toggle:hover {
+}
+
+body.dark {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.dark-mode-toggle {
+  background: var(--primary-blue-dark);
+}
+
+.dark-mode-toggle:hover {
+  background-color: var(--primary-blue-dark);
+}
+
+input[type="text"].dark {
+}
+
+input[type="text"]::placeholder {
+}
