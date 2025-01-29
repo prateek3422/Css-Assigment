@@ -12,7 +12,7 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,24 +21,25 @@ body {
 }
 
 .hero {
+  margin-top: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem 2rem ;
 }
 
 .hero-grid {
   display: grid;
   gap: 1.5rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   margin: 0 auto;
   max-width: 1200px;
 }
 
 .content-col h1 {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 1;
-  margin-bottom: 1rem;
+  text-align: start;
 }
 
 .content-col p {
@@ -50,8 +51,9 @@ body {
 
 .cta-group {
   display: flex;
-  gap: 3rem;
-  align-items: center;
+  align-items: start;
+  gap: 1rem;
+  flex-direction: column;
 }
 
 .sr-only {
@@ -127,12 +129,20 @@ input[type="text"] {
 
 @media (min-width: 640px) {
   .hero {
+    
   }
 
   .content-col h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 1rem;
   }
 
   .cta-group {
+    gap:3rem;
+    align-items: center;
+    flex-direction: row;
   }
 
   .demo-button {
@@ -155,6 +165,9 @@ input[type="text"] {
   }
 
   .hero-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .content-col h1 {

@@ -1,0 +1,127 @@
+/* Challenge CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+
+.container {
+  /* Add your styles here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem;
+}
+
+h1 {
+  /* Add your styles here */
+  display: flex;
+  align-items: center;
+}
+
+.pricing-heading {
+  /* Add your styles here */
+}
+
+.pricing-container {
+  /* Add your styles here */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  margin-top: 1.5rem;
+  max-width: 1200px;
+}
+
+.pricing-card {
+  /* Add your styles here */
+  /* border: 1px solid red; */
+  background-color: #ffff;
+  padding: 1.5em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.pricing-card:hover {
+  /* Add your styles here */
+  transition: all 300ms ease-in;
+
+  transform: scale(1.07);
+  border: 3px solid #ff9533;
+  border-radius: 10px;
+}
+
+.pricing-card.popular {
+  /* Add your styles here */
+  position: relative;
+}
+
+.popular-badge {
+  /* Add your styles here */
+  position: absolute;
+  top: -10px;
+  border: 1px solid red;
+  background-color: #ff9533;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 500;
+  padding: 2px 4px;
+}
+
+.price {
+  /* Add your styles here */
+}
+
+.period {
+  /* Add your styles here */
+  color: #686666;
+}
+
+.features {
+  /* Add your styles here */
+  /* width: 80%; */
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.features li {
+  /* Add your styles here */
+  display: flex;
+
+  gap: 0.8rem;
+  color: #2e2e2e;
+  text-decoration: none;
+  list-style: none;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.subscribe-btn {
+  /* Add your styles here */
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #ff9533;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.subscribe-btn:hover {
+  /* Add your styles here */
+  background-color: #ff9633c6;
+}
