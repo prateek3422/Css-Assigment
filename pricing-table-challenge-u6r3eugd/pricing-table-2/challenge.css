@@ -176,12 +176,18 @@ h1 {
 
 .champion .price {
   /* Add your styles here */
+  color: #ffd83d;
 }
 
 .champion .join-btn {
   /* Add your styles here */
+  border-color: #ffd83d;
+  color: #ffd83d;
 }
 
 .champion .join-btn:hover {
   /* Add your styles here */
+  background-color: #ffd83d;
+  color: #000;
+  transition: all 0.3s ease;
 }
